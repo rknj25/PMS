@@ -23,7 +23,7 @@ const Signup = () => {
 
     try {
       await axios.post(
-        'http://localhost:9999/api/auth/add',
+        'https://productmanagementsystemwithmulter.onrender.com/api/auth/add',
         form
       );
 

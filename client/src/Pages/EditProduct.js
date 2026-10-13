@@ -20,7 +20,7 @@ const EditProduct = () => {
     const getProduct = async () => {
       try {
         const response = await axios.get(
-          `http://localhost:9999/api/product/get/${id}`
+          `https://productmanagementsystemwithmulter.onrender.com/api/product/get/${id}`
         );
 
         const product = response.data.product;

@@ -10,7 +10,7 @@ const Dashboard = () => {
   const getData = async () => {
     try {
       const response = await axios.get(
-        'http://localhost:9999/api/product/get'
+        'https://productmanagementsystemwithmulter.onrender.com/api/product/get'
       );
       setPro(response.data.allPro);
     } catch (error) {
@@ -21,7 +21,7 @@ const Dashboard = () => {
   const deleteItem = async (id) => {
     try {
       const response = await axios.delete(
-        `http://localhost:9999/api/product/del/${id}`
+        `https://productmanagementsystemwithmulter.onrender.com/api/product/del/${id}`
       );
 
       alert(response.data.message);
@@ -64,7 +64,7 @@ const Dashboard = () => {
                     <td>
                       <img
                         className="product-image"
-                        src={`http://localhost:9999/uploads/${item.image}`}
+                        src={`https://productmanagementsystemwithmulter.onrender.com/uploads/${item.image}`}
                         alt={item.name}
                       />
                     </td>

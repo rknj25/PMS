@@ -33,7 +33,7 @@ const AddProduct = () => {
             formData.append("description",pro.description);
             formData.append("image",pro.image);
 
-            const response=await axios.post("http://localhost:9999/api/product/add",
+            const response=await axios.post("https://productmanagementsystemwithmulter.onrender.com/api/product/add",
                 formData
             )
 
