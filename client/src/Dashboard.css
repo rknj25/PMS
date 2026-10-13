@@ -1,0 +1,122 @@
+
+.dashboard-container {
+  min-height: 100vh;
+  padding: 30px;
+  background-color: #f4f7fb;
+}
+
+.dashboard-title {
+  margin-bottom: 25px;
+  color: #243247;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.product-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+}
+
+.product-table {
+  width: 100%;
+  min-width: 750px;
+  margin-bottom: 0;
+  border-collapse: collapse;
+}
+
+.product-table thead th {
+  padding: 16px;
+  background-color: #243b55;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.product-table tbody td,
+.product-table tbody th {
+  padding: 14px 16px;
+  color: #455468;
+  vertical-align: middle;
+  border-bottom: 1px solid #e9eef5;
+}
+
+.product-table tbody tr:hover {
+  background-color: #f5f9ff;
+  transition: background-color 0.2s ease;
+}
+
+.product-table tbody tr:last-child td,
+.product-table tbody tr:last-child th {
+  border-bottom: none;
+}
+
+.product-name {
+  color: #243247 !important;
+  font-weight: 600;
+}
+
+.product-image {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border: 1px solid #e0e6ed;
+  border-radius: 8px;
+}
+
+.edit-btn,
+.delete-btn {
+  display: inline-block;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.edit-btn {
+  background-color: #2563eb;
+}
+
+.edit-btn:hover {
+  background-color: #1d4ed8;
+  color: #ffffff;
+}
+
+.delete-btn {
+  background-color: #dc3545;
+}
+
+.delete-btn:hover {
+  background-color: #b02a37;
+}
+
+.empty-message {
+  padding: 30px !important;
+  color: #7b8794 !important;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .dashboard-title {
+    font-size: 23px;
+  }
+
+  .product-table thead th,
+  .product-table tbody td,
+  .product-table tbody th {
+    padding: 11px;
+  }
+}
